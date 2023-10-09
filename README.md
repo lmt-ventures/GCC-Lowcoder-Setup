@@ -103,3 +103,4 @@
       - Route all traffic to the VPC
 ### Post Deployment Settings
 - After deploying the revision, in the networking tab, set the ingress control to all (the front-end should be exposed to the internet)
+
