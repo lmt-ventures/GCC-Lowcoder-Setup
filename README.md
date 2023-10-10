@@ -72,6 +72,7 @@
     - Traffic routing:
       - Route only requests to private IPs to the VPC (this is necessary to not expose the Node Service to the rest of the internet)
 
+![Node Service Networking Settings.JPG](https://github.com/lmt-ventures/GCC-Lowcoder-Setup/blob/816341197861acb84a3f41762d67059e6c1030c0/Node%20Service%20Networking%20Settings.JPG)
 
 ## Setting up the API Service
 1. In the Google Console go to Cloud Run
@@ -127,6 +128,7 @@
     - Traffic routing:
       - Route all traffic to the VPC
 
+![API Service Networking Settings.JPG](https://github.com/lmt-ventures/GCC-Lowcoder-Setup/blob/816341197861acb84a3f41762d67059e6c1030c0/API%20Service%20Networking%20Settings.JPG)
 
 ## Setting up the Front-End Service 
 1. In the Google Console go to Cloud Run
@@ -165,6 +167,9 @@
        - Network: Select the VPC network that was created 
     - Traffic routing:
       - Route all traffic to the VPC
+
+![Frontend Service Networking Settings.JPG](https://github.com/lmt-ventures/GCC-Lowcoder-Setup/blob/816341197861acb84a3f41762d67059e6c1030c0/Frontend%20Service%20Networking%20Settings.JPG)
+
 ### Post Deployment Settings
 - Can set up a DNS through Google Domains 
 
