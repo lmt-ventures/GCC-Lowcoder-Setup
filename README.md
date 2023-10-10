@@ -82,8 +82,10 @@
     - Memory: 1 GiB 
     - CPU: 1
 3. Execution environment: Second generation
+
 ![API Service Container Settings.JPG](https://github.com/lmt-ventures/GCC-Lowcoder-Setup/blob/a0c34bf799035819f04f48ef884f4200c973e3e9/API%20Service%20Container%20Settings.JPG)
-5. Environment Variable: add any other environment variable as per your requirement (list of environment variables https://raw.githubusercontent.com/lowcoder-org/lowcoder/main/deploy/docker/docker-compose-multi.yaml)
+
+4. Environment Variable: add any other environment variable as per your requirement (list of environment variables https://raw.githubusercontent.com/lowcoder-org/lowcoder/main/deploy/docker/docker-compose-multi.yaml)
     - Variable 1: 
       - Name 1: REDIS_URL
       - Value 1: use: redis://10.0.0.0:6379?db=databasename and replace 10.0.0.0 with your redis instance ip address and database name with the name of your database
