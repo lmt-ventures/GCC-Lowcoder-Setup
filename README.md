@@ -3,7 +3,7 @@
 ## Creating a VPC Network
 1. In the Google Cloud Console, in VPC Network, click on VPC Networks
     - Enable Compute Engine API
-3. Create a VPC Network
+2. Create a VPC Network
     - Name the VPC Network
     - Disable IPv6
     - Create a custom subnet 
@@ -15,9 +15,9 @@
         - In the subnet setting turn on Private Google Access (it is necessary to enable this setting otherwise the cloud run services will not be able to communicate with one another)
             - This will be in the Edit subnet section is using a custom subnet creation mode
             - If subnet creation mode is automatic then you will have to go to the region of your VPCnetwork and enable the Private Google Access setting from there once the VPCis created.
-4. In the VPC Network, create a Connector
+3. In the VPC Network, create a Connector
     - Enable serverless vpc access API
-6. Create a Serverless VPC Connector
+4. Create a Serverless VPC Connector
     - Name the Serverless VPC Connector
     - Choose the same region as the VPC Network
     - Network: Select the VPC Network that was previously created
@@ -33,7 +33,7 @@
     - Basic Tier
     - 1 GB of capacity is more than sufficient in our environment however if you face trouble then you can always adjust the capacity as necessary
     - Choose the same region as the VPC Network
-    - Then connect your redis instance to the VPC network created previously
+    - Set up Connection: connect your redis instance to the VPC network created previously
 
 
 ## Setting up the Node Service
