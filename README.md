@@ -29,6 +29,8 @@
         - Custom IP range
         - IP range (cannot be the same subnet that was created before) 
 
+![Serverless VPC Access Connector Setup.JPG](https://github.com/lmt-ventures/GCC-Lowcoder-Setup/blob/8d4e5d17533415c6ec4ae800381be5836923b961/Serverless%20VPC%20Access%20Connector%20Setup.JPG)
+
 ## Creating a Redis Instance
 1. Within Google Cloud Console in Memorystore, in the redis page, create a redis instance
 2. Enable Google Cloud Memorystore for Redis API
@@ -39,6 +41,7 @@
     - Choose the same region as the VPC Network
     - Set up Connection: connect your redis instance to the VPC network created previously
 
+![Redis Instance Setup.JPG](https://github.com/lmt-ventures/GCC-Lowcoder-Setup/blob/8d4e5d17533415c6ec4ae800381be5836923b961/Redis%20Instance%20Setup.JPG)
 
 ## Setting up the Node Service
 1. In the Google Console go to Cloud Run
