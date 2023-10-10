@@ -31,6 +31,30 @@
 
 ![Serverless VPC Access Connector Setup.JPG](https://github.com/lmt-ventures/GCC-Lowcoder-Setup/blob/8d4e5d17533415c6ec4ae800381be5836923b961/Serverless%20VPC%20Access%20Connector%20Setup.JPG)
 
+##Creating a Cloud NAT
+- Creating a Cloud NAT is necessary because when connecting the lowcoder services to MongoDB, you must whitelist an IP address which can access the MongoDB cluster.
+    - Google Cloud services will use different IP addresses each time to communicate with the internet unless an Cloud NAT is set up on the VPC
+1. Within the “Network Services” in the Google Cloud Console click on “Cloud NAT” and then “Create Cloud NAT gateway”
+2. Name the Cloud NAT gateway
+3. Set the NAT type to public
+4. Select a Cloud Router 
+    - Connect it to the VPC Network created previously
+    - Select the region for your Router (the one your services and VPC are running on)
+    - Create a New Router 
+        - Name the router
+5. Cloud NAT mapping 
+    - Source: Primary and secondary ranges for all subnets
+    - Cloud NAT IP Addresses: Manual
+        - IP Addresses:
+            - Premium Network Service Tier
+            - IP address: 
+                - Create and Name an IP address and then click on “Reserve”
+            - IP draining: Off (default)
+6. Click on Create Cloud NAT 
+7. After creating an Cloud NAT IP address, whitelist this IP address on your MongoDB cluster
+
+![Cloud NAT Setup.JPG](https://github.com/lmt-ventures/GCC-Lowcoder-Setup/blob/698541f903287406630f701a474c61d0916f097b/Cloud%20NAT%20Setup.JPG)
+
 ## Creating a Redis Instance
 1. Within Google Cloud Console in Memorystore, in the redis page, create a redis instance
 2. Enable Google Cloud Memorystore for Redis API
