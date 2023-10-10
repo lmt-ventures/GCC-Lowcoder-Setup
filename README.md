@@ -15,9 +15,13 @@
         - In the subnet setting turn on Private Google Access (it is necessary to enable this setting otherwise the cloud run services will not be able to communicate with one another)
             - This will be in the Edit subnet section is using a custom subnet creation mode
             - If subnet creation mode is automatic then you will have to go to the region of your VPCnetwork and enable the Private Google Access setting from there once the VPCis created.
-3. In the VPC Network, create a Connector
+
+![VPC Network Setup.JPG](https://github.com/lmt-ventures/GCC-Lowcoder-Setup/blob/2cf8a390724968a9864b8c9967018d565502f89b/VPC%20Network%20Setup.JPG)
+
+## Creating a Serverless VPC Access Connector
+1. In the VPC Network, create a Connector
     - Enable serverless vpc access API
-4. Create a Serverless VPC Connector
+2. Create a Serverless VPC Connector
     - Name the Serverless VPC Connector
     - Choose the same region as the VPC Network
     - Network: Select the VPC Network that was previously created
