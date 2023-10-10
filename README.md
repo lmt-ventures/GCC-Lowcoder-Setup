@@ -63,7 +63,7 @@
     - Name 1: LOWCODER_API_SERVICE_URL
     - Value 1: Paste the Api Service URL (Once the API Service is created after the next step
 
-![Node Service Environment Variables.JPG](Node Service Environment Variables.JPG)
+![Node Service Environment Variables.JPG]([Node Service Environment Variables.JPG](https://github.com/lmt-ventures/GCC-Lowcoder-Setup/blob/4df71f618e95330d771f811540905c551b9a70ab/Node%20Service%20Settings.JPG))
 
 ### Networking Settings
 - Connect to a VPC for outbound traffic
