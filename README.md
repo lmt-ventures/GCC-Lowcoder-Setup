@@ -1,4 +1,4 @@
-# GCC-Lowcoder-Setup
+# Google Cloud Console-Lowcoder-Setup
 
 ## Creating a VPC Network
 1. In the Google Cloud Console, in VPC Network, click on VPC Networks
@@ -105,7 +105,7 @@
     - Variable 7: 
       - Name 7: CORS_ALLOWED_DOMAINS
       - Value 7: *
-        
+        API Service Container Settings.JPG
 ### Networking Settings
 - Connect to a VPC for outbound traffic
     - Use Serverless VPC Access Connectors
