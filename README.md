@@ -109,6 +109,8 @@
       - Name 7: CORS_ALLOWED_DOMAINS
       - Value 7: *
 
+![https://github.com/lmt-ventures/GCC-Lowcoder-Setup/blob/c5d3f5bb8824de49807e27cbb31336441dd785f1/API%20Service%20Envirnoment%20Variables.JPG]
+
 ### Networking Settings
 - Connect to a VPC for outbound traffic
     - Use Serverless VPC Access Connectors
