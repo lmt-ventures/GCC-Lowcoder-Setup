@@ -46,6 +46,8 @@
 6. Ingress Control is set to Internal (this is necessary to not expose the Node Service to the rest of the internet)
 7. Authentication: Allow unauthenticated access invocations
 
+![Node Service Settings.JPG](https://github.com/lmt-ventures/GCC-Lowcoder-Setup/blob/4df71f618e95330d771f811540905c551b9a70ab/Node%20Service%20Settings.JPG)
+
 ### Container Settings
 1. Container port: 6060
 2. CPU allocation:
@@ -53,10 +55,15 @@
 3. Capacity (allocate as necessary) 
     - Memory: 1 GiB 
     - CPU: 1
-4. Execution environment: Default 
+4. Execution environment: Default
+
+![Node Service Container Settings.JPG](https://github.com/lmt-ventures/GCC-Lowcoder-Setup/blob/4df71f618e95330d771f811540905c551b9a70ab/Node%20Service%20Container%20Settings.JPG)
+
 5. Environment Variable:
     - Name 1: LOWCODER_API_SERVICE_URL
     - Value 1: Paste the Api Service URL (Once the API Service is created after the next step
+
+![Node Service Environment Variables.JPG](Node Service Environment Variables.JPG)
 
 ### Networking Settings
 - Connect to a VPC for outbound traffic
@@ -75,6 +82,8 @@
 5. CPU allocation and pricing: CPU is only allocated during request processing
 6. Ingress Control is set to Internal (this is necessary to not expose the API Service to the rest of the internet)
 7. Authentication: Allow unauthenticated access invocations
+
+![API Service Settings.JPG](https://github.com/lmt-ventures/GCC-Lowcoder-Setup/blob/4df71f618e95330d771f811540905c551b9a70ab/API%20Service%20Settings.JPG)
 
 ### Container Settings
 1. Container port: 8080
@@ -129,12 +138,17 @@
 6. Ingress Control is set to all (the front-end should be exposed to the internet)
 7. Authentication: Allow unauthenticated access invocations
 
+![Frontend Service Settings.JPG](https://github.com/lmt-ventures/GCC-Lowcoder-Setup/blob/4df71f618e95330d771f811540905c551b9a70ab/Frontend%20Service%20Settings.JPG)
+
 ### Container Settings 
 1. Container port: 3000
 2. Capacity (allocate as necessary) 
     - Memory: 512 MiB 
     - CPU: 1
 3. Execution environment: Default
+
+![Frontend Service Container Settings.JPG](https://github.com/lmt-ventures/GCC-Lowcoder-Setup/blob/4df71f618e95330d771f811540905c551b9a70ab/Frontend%20Service%20Container%20Settings.JPG)
+
 4. Environment Variable: add any other environment variable as per your requirement (list of environment variables https://raw.githubusercontent.com/lowcoder-org/lowcoder/main/deploy/docker/docker-compose-multi.yaml)
     - Variable 1: 
       - Name 1: LOWCODER_API_SERVICE_URL
@@ -142,6 +156,9 @@
     - Variable 2: 
       - Name 2: LOWCODER_NODE_SERVICE_URL
       - Value 2: Paste the Node Service URL
+
+![Frontend Service Environment Variables.JPG](https://github.com/lmt-ventures/GCC-Lowcoder-Setup/blob/4df71f618e95330d771f811540905c551b9a70ab/Frontend%20Service%20Environment%20Variables.JPG)
+
 ### Networking Settings
 - Connect to a VPC for outbound traffic
     - Use Serverless VPC Access Connectors
